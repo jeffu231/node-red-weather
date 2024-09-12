@@ -1,0 +1,1209 @@
+[
+    {
+        "id": "549d1ea0.9d215",
+        "type": "tab",
+        "label": "Weather Station",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "434b5a1b6be7eb8c",
+        "type": "tab",
+        "label": "Header",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d81edb5b.f914f8",
+        "type": "mqtt-broker",
+        "name": "Smarthome Broker",
+        "broker": "smarthome.home.kb9kld.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9bb2b5be.1967d8",
+        "type": "ui_group",
+        "name": "Outdoor Conditions",
+        "tab": "ce24adb23ae31c9a",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce24adb23ae31c9a",
+        "type": "ui_tab",
+        "name": "Weather Station",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ddfc8523782a8c33",
+        "type": "ui_group",
+        "name": "8h Outdoor History",
+        "tab": "ce24adb23ae31c9a",
+        "order": 3,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f4b232fa476abc4b",
+        "type": "ui_group",
+        "name": "Indoor Conditions",
+        "tab": "ce24adb23ae31c9a",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6acb8ecec6277ecb",
+        "type": "ui_group",
+        "d": true,
+        "name": "24h Indoor History",
+        "tab": "ce24adb23ae31c9a",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f353b0a5f63b4d0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Weather Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c80c7fe0776eedb6",
+        "type": "ui_group",
+        "name": "Header",
+        "tab": "ce24adb23ae31c9a",
+        "order": 5,
+        "disp": true,
+        "width": "1",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c20c034.9c71d",
+        "type": "mqtt in",
+        "z": "549d1ea0.9d215",
+        "name": "Observation",
+        "topic": "9_barbarotto/weather/observation",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d81edb5b.f914f8",
+        "nl": false,
+        "rap": false,
+        "rh": "0",
+        "inputs": 0,
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "a94186b5d60bbd20",
+                "1d0da777650a50e3",
+                "79b764330d7225fd",
+                "778a01477df4268c",
+                "b4ad6856ce14e9ea"
+            ]
+        ]
+    },
+    {
+        "id": "ab5451d8.9e79c",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Ouside Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Humidity",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.outsideHumidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "1d913563.6ba2bb",
+                "a97b9cfa.6ea7c"
+            ]
+        ]
+    },
+    {
+        "id": "a6ede747.40c568",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Barometer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Pressure",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.barometer",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 460,
+        "wires": [
+            [
+                "49d2f9fb.264178"
+            ]
+        ]
+    },
+    {
+        "id": "653328d1.affe48",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "9bb2b5be.1967d8",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°F",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "105",
+        "colors": [
+            "#0080ff",
+            "#ff8000",
+            "#ff0209"
+        ],
+        "seg1": "65",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c9e6d214.a7121",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "ddfc8523782a8c33",
+        "order": 1,
+        "width": "8",
+        "height": "4",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-15",
+        "ymax": "105",
+        "removeOlder": "8",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d913563.6ba2bb",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "9bb2b5be.1967d8",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#b1dd8c",
+            "#77bb41",
+            "#4f7a28"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a97b9cfa.6ea7c",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "ddfc8523782a8c33",
+        "order": 2,
+        "width": "8",
+        "height": "4",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "8",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2f97ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49d2f9fb.264178",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "9bb2b5be.1967d8",
+        "order": 5,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "Hg",
+        "format": "{{value}}",
+        "min": "26",
+        "max": "32",
+        "colors": [
+            "#b51a00",
+            "#0061ff",
+            "#94e3fe"
+        ],
+        "seg1": "29.8",
+        "seg2": "30.2",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "94c22140.d440c",
+        "type": "comment",
+        "z": "549d1ea0.9d215",
+        "name": "Weather Station Data",
+        "info": "",
+        "x": 120,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c94f4e8a44c98919",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Outside Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Outside Temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.outsideTemp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "653328d1.affe48",
+                "c9e6d214.a7121"
+            ]
+        ]
+    },
+    {
+        "id": "c090038cf7825f17",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "d": true,
+        "name": "",
+        "group": "9bb2b5be.1967d8",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Wind Speed",
+        "label": "MPH",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "75",
+        "colors": [
+            "#0080ff",
+            "#ff8000",
+            "#ff0209"
+        ],
+        "seg1": "10",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6b15e5ab9e033225",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "ddfc8523782a8c33",
+        "order": 3,
+        "width": "8",
+        "height": "4",
+        "label": "Wind Speed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "8",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b73cb89a38701965",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Wind Speed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Wind Speed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.windSpeed",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 540,
+        "wires": [
+            [
+                "c090038cf7825f17",
+                "6b15e5ab9e033225"
+            ]
+        ]
+    },
+    {
+        "id": "7f433cb752e4854e",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "d": true,
+        "name": "",
+        "group": "9bb2b5be.1967d8",
+        "order": 4,
+        "width": "4",
+        "height": "4",
+        "gtype": "compass",
+        "title": "Wind Direction",
+        "label": "Degrees",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "360",
+        "colors": [
+            "#0080ff",
+            "#ff8000",
+            "#ff0209"
+        ],
+        "seg1": "10",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a6681299459fd8ba",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "ddfc8523782a8c33",
+        "order": 4,
+        "width": "8",
+        "height": "4",
+        "label": "Wind Direction",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "360",
+        "removeOlder": "8",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b992633cb4a5a31",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Wind Direction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Wind Direction",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.windDirection",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 740,
+        "wires": [
+            [
+                "7f433cb752e4854e",
+                "a6681299459fd8ba"
+            ]
+        ]
+    },
+    {
+        "id": "83a2fe9c66663503",
+        "type": "mqtt in",
+        "z": "549d1ea0.9d215",
+        "name": "Observation",
+        "topic": "9_barbarotto/weather/observation",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d81edb5b.f914f8",
+        "nl": false,
+        "rap": false,
+        "rh": "0",
+        "inputs": 0,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            [
+                "8a30f0b88ba61b01",
+                "b58197e6f0a91809"
+            ]
+        ]
+    },
+    {
+        "id": "934a864746f59d3e",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Indoor Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Humidity",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.insideHumidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 400,
+        "wires": [
+            [
+                "a87b0e455a55317b",
+                "75fde66d9275dd9d"
+            ]
+        ]
+    },
+    {
+        "id": "81696df095c0d5c5",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "f4b232fa476abc4b",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°F",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "90",
+        "colors": [
+            "#0080ff",
+            "#ff8000",
+            "#ff0209"
+        ],
+        "seg1": "65",
+        "seg2": "85",
+        "diff": false,
+        "className": "",
+        "x": 1400,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ad7fee104214ad38",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "6acb8ecec6277ecb",
+        "order": 2,
+        "width": "8",
+        "height": "4",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-15",
+        "ymax": "105",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1400,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a87b0e455a55317b",
+        "type": "ui_gauge",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "f4b232fa476abc4b",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#b1dd8c",
+            "#77bb41",
+            "#4f7a28"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 1390,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "75fde66d9275dd9d",
+        "type": "ui_chart",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "group": "6acb8ecec6277ecb",
+        "order": 5,
+        "width": "8",
+        "height": "4",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#2f97ff",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1390,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6987fa9d5f9e14f",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Inside Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.insideTemp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            [
+                "81696df095c0d5c5",
+                "ad7fee104214ad38"
+            ]
+        ]
+    },
+    {
+        "id": "65165e2c6599e460",
+        "type": "comment",
+        "z": "549d1ea0.9d215",
+        "name": "Outdoor Data",
+        "info": "",
+        "x": 150,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5dca7797bf6eee57",
+        "type": "comment",
+        "z": "549d1ea0.9d215",
+        "name": "Indoor Data",
+        "info": "",
+        "x": 1200,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a3654026.abf898",
+        "type": "ui_template",
+        "z": "549d1ea0.9d215",
+        "group": "9bb2b5be.1967d8",
+        "name": "Wind",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "format": "<!--\npass msg.payload.degrees, msg.payload.speed, msg.payload.speed_unit\n-->\n<script>\n    // Watch the incoming message and convert the degrees to a human readable compass direction\n    (function(scope){\n        scope.$watch('msg', function(msg) {\n            if(typeof(msg) === \"object\"){\n                // Convert the degrees to cardinal directions\n                var deg = msg.payload.degrees;\n                var dirs = [\"N\",\"NNE\",\"NE\",\"ENE\",\"E\",\"ESE\",\"SE\",\"SSE\",\"S\",\"SSW\",\"SW\",\"WSW\",\"W\",\"WNW\",\"NW\",\"NNW\",\"N\"];\n                var idx = Math.round(deg*(dirs.length-1)/360);\n                scope.direction = dirs[idx];\n                \n                \n                // Keep track of the highest speed value, giving it 40 as a rough starting point.\n                // Works okay for MPH and KTS, but KMH will show purple at a lower speed than the rest\n                scope.max_val = (msg.payload.speed > scope.max_val ? msg.payload.speed : 40);\n                \n                scope.p_speed = msg.payload.speed;\n                scope.p_max_val = scope.max_val;\n                var low_colors = [\n                    '#FFFFFF', // white\n                    '#d6f7ff', // light blue\n                    '#85ffd2', // blue green\n                    '#61ff6e' // green 10mph\n                    ];\n                var high_colors = [\n                    '#61ff6e', // green 10mph\n                    '#d5ff61', // green yellow\n                    '#fffc61', // yellow\n                    '#ffe561', // yellow orange 20mph\n                    '#ffcd61', // orange\n                    '#ffad61', // orange red\n                    '#ff7661', // red\n                    '#ff61dd', // red purple\n                    '#e261ff' // purple\n                ];\n                \n                if(msg.payload.speed <= 10){\n                    scope.color = low_colors[Math.round(msg.payload.speed*(low_colors.length-1)/10)];\n                }else{\n                    scope.color = high_colors[Math.round(msg.payload.speed*(high_colors.length-1) / scope.max_val)];\n                }\n                \n                //$(\".compass_container\").css(\"background-color\",scope.color);\n            }\n    \t});\n    })(scope);\n    \n    // Hacks to improve the layout and make it scale\n    $(document).ready(function(){\n        setTimeout(function () {\n            // Remove the auto scrolling from the parent node\n            $(\".compass_container\").parent().css(\"overflow\",\"hidden\");\n        \n            // Adjust the color to match the theme base color by looking up the toolbar header background color;\n            $(\".compass_container .triangle\").css(\"border-bottom-color\",$(\"md-toolbar\").css(\"background-color\"));\n        \n            // Scale the compass into the box that it's being rendered in\n            // This CSS hack helps make sure the line & font size scales appropriately\n            // Based on the node's grid size\n            $(\".compass_container\").each(function(k,v){\n                var scaleWidth = ($(v).parent().width() * .65) / $(v).width();\n                var scaleHeight = ($(v).parent().height()* .65) / $(v).height();\n\n                var labelHeight = $(\"#compass_label\").height()+5;\n               console.log('label:');\n               console.log(labelHeight);\n                var translateX = ($(v).width() - $(v).parent().width()) / 2;\n                var translateY = ($(v).height() - $(v).parent().height() + 2 * labelHeight) / 2;\n        \n                $(v).css(\"transform\",\"translate(-\"+translateX+\"px,-\"+translateY+\"px) scale(\"+scaleWidth+\",\"+scaleHeight+\") \");\n            });\n            \n            $(\".compass_container\").css(\"display\",\"block\"); // Unhide it now that it's resized\n        }, 1000);\n    });\n</script>\n<style>\n     @import url(https://fonts.googleapis.com/css?family=Dosis:200,400,500,600);\n     \n     .compass_container{\n        transition: 1s ease-in-out;\n        position: relative;\n        display: none;\n        width: 500px;\n        height: 500px;\n        border-radius: 100%;\n        font-family: 'Dosis';\n        font-size: 80px;\n        box-shadow: inset 0px 0px 0px 30px #777; \n        //background-color: {{color}};\n     }\n     \n     .compass_container .compass_header{\n        font-weight: bold;\n        position: absolute;\n        text-align: center;\n        width: 100%;\n        font-size: 75%;\n        top: -15px\n     }\n     .compass_container .text_container{\n        height: 100%;\n        width: 100%;\n        padding: 0px;\n        display: block;\n        border-radius: 100%;\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n     }\n     \n     .compass_container .arrow{\n        transition: 1s ease-in-out;\n        width: 100%;\n        height: 100%;\n        display: block;\n        position: absolute;\n        top: 0;\n     }\n     \n     .compass_container .arrow .triangle{\n        width: 0;\n\t\theight: 0;\n\t\tborder-left: 45px solid transparent;\n\t\tborder-right: 45px solid transparent;\n\t\tborder-bottom: 90px solid black;\n\t\tposition: absolute;\n\t\ttop: -15px;\n\t\tleft: 50%;\n\t\tmargin-left: -45px;\n\t\tz-index: 99;\n     }\n</style>\n\n<p style=\"text-align:center\" id=\"compass_label\" class=\"label nr-dashboard-gauge-title nr-dashboard-gauge-titlel\"\n    ng-class=\"{'nr-dashboard-gauge-titlel':(me.item.width > 3)}\"\n    ng-hide=\"(me.item.height <= 2)\" aria-hidden=\"false\">\n    Wind\n</p>\n<div class=\"compass_container\" style=\"\">\n    <div class=\"compass_header\">N</div>\n  \n    <div class=\"nr-dashboard-text text_container\">\n    \n        <div class=\"direction\" style=\"font-size: 120%\">{{direction}}</div>\n        <div style=\"flex-direction: row; font-weight: bold;\">\n            <span style=\"font-size: 100%\">{{msg.payload.speed}}</span>\n            <span style=\"font-size: 75%\">{{msg.payload.speed_unit}}</span>\n        </div>\n    </div>\n    <div class=\"arrow\" style=\"transform: rotate({{msg.payload.degrees}}deg);\">\n      <div class=\"triangle\"></div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 650,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7626d807ac01ef6c",
+        "type": "change",
+        "z": "549d1ea0.9d215",
+        "name": "Wind Direction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Wind Direction",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{        \t    \"degrees\": msg.payload.windDirection,\t    \"speed\": msg.payload.windSpeed, \t    \"speed_unit\": \"MPH\"\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 640,
+        "wires": [
+            [
+                "a3654026.abf898"
+            ]
+        ]
+    },
+    {
+        "id": "a94186b5d60bbd20",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.outsideTemp",
+        "topi": "topic",
+        "x": 270,
+        "y": 260,
+        "wires": [
+            [
+                "c94f4e8a44c98919"
+            ]
+        ]
+    },
+    {
+        "id": "1d0da777650a50e3",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.barometer",
+        "topi": "topic",
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "a6ede747.40c568"
+            ]
+        ]
+    },
+    {
+        "id": "79b764330d7225fd",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.outsideHumidity",
+        "topi": "topic",
+        "x": 270,
+        "y": 380,
+        "wires": [
+            [
+                "ab5451d8.9e79c"
+            ]
+        ]
+    },
+    {
+        "id": "b4ad6856ce14e9ea",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "Speed Filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload.windSpeed",
+        "topi": "topic",
+        "x": 230,
+        "y": 580,
+        "wires": [
+            [
+                "b73cb89a38701965",
+                "7626d807ac01ef6c"
+            ]
+        ]
+    },
+    {
+        "id": "778a01477df4268c",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "Direction Filter",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.windDirection",
+        "topi": "topic",
+        "x": 220,
+        "y": 700,
+        "wires": [
+            [
+                "2b992633cb4a5a31",
+                "7626d807ac01ef6c"
+            ]
+        ]
+    },
+    {
+        "id": "8a30f0b88ba61b01",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.insideTemp",
+        "topi": "topic",
+        "x": 1010,
+        "y": 280,
+        "wires": [
+            [
+                "a6987fa9d5f9e14f"
+            ]
+        ]
+    },
+    {
+        "id": "b58197e6f0a91809",
+        "type": "rbe",
+        "z": "549d1ea0.9d215",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.insideHumidity",
+        "topi": "topic",
+        "x": 1010,
+        "y": 400,
+        "wires": [
+            [
+                "934a864746f59d3e"
+            ]
+        ]
+    },
+    {
+        "id": "ff9c888a5ef42649",
+        "type": "ui_template",
+        "z": "434b5a1b6be7eb8c",
+        "group": "c80c7fe0776eedb6",
+        "name": "Weather Station Header",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .md-toolbar-tools {\n        font-size: 14px;\n        height: 24px;\n    }\n\n    md-toolbar {\n        min-height: 16px;\n    }\n\n    #clock {\n        font-variant-numeric: tabular-nums;\n    }\n\n    #infobar {\n        margin: 5px 5px 5px auto;\n    }\n</style>\n\n<script id=\"titleScript\" type=\"text/javascript\">\n\ntheScope=scope;\n\n$(function() {\n    if($('.md-toolbar-tools').length != 0){\n        init();\n    }else setTimeout(init, 500)\n});\n\nfunction init(){\n    createInfoBar();\n    loadClock();\n}\n\n\n\nfunction createInfoBar(){\n    var toolbar = $('.md-toolbar-tools');\n    $('#infobar').remove();\n    var div = $('<div id=\"infobar\" />');\n    //div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n}\n\nfunction loadClock(){\n    \n    var infobar = $('#infobar');\n    \n    $('#clock').remove();\n    var s = $('<span/ id=\"clock\">');\n    \n    infobar.append(s);\n\n\n    function updateTime() {\n       \n        //console.log('UpdateTime:');\n        var d = new Date();\n        s.text(d.toLocaleTimeString());\n            \n    }\n\n    if(document.clockInterval){ \n            clearInterval(document.clockInterval);\n            document.clockInterval = null;\n    }\n        \n    document.clockInterval = setInterval(updateTime,1000);\n}\n\n$('#Weather_Station_Header').hide();\n//let hideMe = '{\"groups\":{\"hide\":[\"Header\"]}}';\n//theScope.send({payload:hideMe});\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    }
+]

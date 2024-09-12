@@ -1,0 +1,25 @@
+################################################################################
+# Node-RED Stack for monitoring the K9KLD weather station
+
+services:
+  node-red:
+    container_name: node-red-weather
+    restart: unless-stopped
+    networks:
+      - traefik-net
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - TZ=America/Chicago
+    volumes:
+      - node-red-data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.weather-ui.rule=Host(`$HOSTNAME`)"
+volumes:
+  node-red-data:
+
+networks:
+  traefik-net:
+    external: true
