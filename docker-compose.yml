@@ -4,6 +4,7 @@
 services:
   node-red:
     container_name: node-red-weather
+    image: node-red-weather
     restart: unless-stopped
     networks:
       - traefik-net
